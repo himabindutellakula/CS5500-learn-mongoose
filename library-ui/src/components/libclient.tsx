@@ -49,7 +49,7 @@ export default function LibClient() {
   return (
     <div>
       <ol>
-        {content.data.map((val, index) => (
+        {content?.data.map((val, index) => (
           <li key={index}>
             {val}
             {content.dtls && <BookDetail book={val} handleContent={handleContent} />}
